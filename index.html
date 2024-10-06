@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Planet Simulator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="table">
+            <h1 class="title">Exoplanet Simulator</h1>
+            <div id="container">
+                <h2>Can life exist? </h2>
+                <h3 id="survival"></h3>
+                
+                <h3 id="tempStatus" style="color:red"></h3>
+                <h3 id="gravityStatus" style="color:red"></h3>
+
+                <div class="slidecontainer">
+                    <p>Distance (AU): <span id="distanceLabel"></span></p>
+                    <input type="range" min="0" max="5" value="1" step="0.05" class="slider" id="distanceRange">
+                </div>
+
+                <div class="slidecontainer">
+                    <p>Solar constant (Wm⁻²): <span id="activityLabel"></span></p>
+                    <input type="range" min="0" max="10000" value="1370" step="10" class="slider" id="activityRange">
+                </div>
+
+                <div class="slidecontainer">
+                    <p>Size (diameter in km): <span id="sizeLabel"></span></p>
+                    <input type="range" min="2000" max="50000" value="12700" step="100" class="slider" id="sizeRange">
+                </div>
+
+                <div class="slidecontainer">
+                    <p>Mass (Earth masses): <span id="massLabel"></span></p>
+                    <input type="range" min="0" max="50" value="1" step="0.1" class="slider" id="massRange">
+                </div>
+
+                <div class="slidecontainer">
+                    <p>CO2 (ppm): <span id="CO2Label"></span></p>
+                    <input type="range" min="0" max="30000" value="418" step="10" class="slider" id="CO2Range">
+                </div>
+
+                <br><br><br><br><br>
+
+                <h4 id="temp"></h4>
+                <h4 id="tempatm"></h4>
+                <h4 id="gforce"></h4>
+
+                <br><br>
+
+                <p id="note">*Average global temperature calculation is done under the assumption that albedo is 0.3 and that CO2 is the only greenhouse gas. In reality, water vapour is more responsible of increasing temperature.</p>
+            </div>
+            <img id="planet" src="">
+            <h2>Click <a href="info.html">here</a> to go back to information page</h2>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    </body>
+</html>
